@@ -28,7 +28,7 @@
 * Scss
 
 # Как запустить проект
-В терминале через <code>cd [path]</code> подключитесь к дирректории проекта и пропишите <code>npm start</code>
+В терминале через <code>cd [path]</code> подключитесь к дирректории проекта установите необходимые пакеты через <code>npm i</code> и пропишите <code>npm start</code>
 
 # Демо версия
 ![Project photo](https://i.ibb.co/y8n2Wns/image.png "Logo Title Text 1")
