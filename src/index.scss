@@ -1,0 +1,29 @@
+// including open sans
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('./fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src: url('./fonts/OpenSans-Bold.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: #DEECFD;
+}
+
+input[type=submit] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}

@@ -1,0 +1,120 @@
+.citiesSearch {
+    width: 1000px;
+    margin: 25px auto 75px;
+    display: flex;
+    justify-content: space-between;
+    &__search {
+        width: 250px;
+        background: white;
+        box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+        padding: 5px 5px 15px;
+        border-radius: 5px;
+        label {
+            color: #0080ff;
+            font-weight: 700;
+            font-size: 16px;
+            margin-left: 5px;
+        }
+        input[type="text"] {
+            width: 95%;
+            height: 40px;
+            padding-left: 5px;
+            outline: none;
+            border: 2px solid #0080ff;
+            border-radius: 5px;
+            color: black;
+            font-size: 15px;
+            margin: 2px auto;
+            &::placeholder {
+                color: black;
+                opacity: 0.8;
+            }
+        }
+        .error {
+            height: 15px;
+            color: red;
+            font-size: 12.5px;
+            font-weight: 600;
+            padding-left: 5px;
+            line-height: 10px;
+        }
+        input[type="submit"] {
+            color: white;
+            border: 0px;
+            outline: none;
+            background: #f47b21;
+            width: 50%;
+            height: 35px;
+            border-radius: 5px;
+            font-weight: 500;
+            font-size: 15px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+    }
+    &__result {
+        width: 675px;
+        & > div {
+            box-shadow: 0px 0px 20px -10px rgba(0, 0, 0, 0.75);
+            background: white;
+            border-radius: 5px;
+        }
+        & .error {
+            border: 2px solid #dc3545;
+            padding: 10px;
+            color: #dc3545;
+            font-weight: 700;
+        }
+        & .item {
+            height: 50px;
+            line-height: 50px;
+            font-weight: 400;
+            font-size: 17px;
+            padding-left: 15px;
+            display: flex;
+            & .star {
+                cursor: pointer;
+                svg {
+                    width: 30px;
+                    margin-top: 10px;
+                }
+            }
+            & .cityName {
+                margin-left: 15px;
+                font-size: 17px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .citiesSearch {
+        width: 95%;
+        margin: 25px auto 75px;
+        display: block;
+        &__search {
+            width: 100%;
+            padding-bottom: 5px;
+            input[type="text"] {
+                width: 100%;
+            }
+            .error {
+                height: 15px;
+                color: red;
+                font-size: 12.5px;
+                font-weight: 600;
+                padding-left: 5px;
+                line-height: 10px;
+            }
+            input[type="submit"] {
+                width: 125px;
+            }
+        }
+        &__result {
+            margin-top: 15px;
+            width: 100%;
+        }
+    }    
+}
