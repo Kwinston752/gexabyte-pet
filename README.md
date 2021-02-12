@@ -25,7 +25,7 @@
 * React-router-dom
 * Redux
 * Swiper
-* Sass
+* Scss
 
 # Как запустить проект
 В терминале через <code>cd [path]</code> подключитесь к дирректории проекта и пропишите <code>npm start</code>
